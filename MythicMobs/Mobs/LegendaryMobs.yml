@@ -7,7 +7,7 @@
 
 LZombie:
   Type: zombie
-  Display: '&lLegendary Zombie'
+  Display: '&6&lLegendary &fZombie'
   Health: 20
   Damage: 20
   Equipment:
@@ -25,7 +25,7 @@ LZombie:
     PreventOtherDrops: true
 LSkeleton:
   Type: skeleton
-  Display: '&4&lOP &6Skeleton'
+  Display: '&6&lLegendary &fSkeleton'
   Health: 20
   Damage: 20
   Equipment:
@@ -39,5 +39,17 @@ LSkeleton:
   Options:
     AlwaysShowName: true
     MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+LSpider:
+  Type: spider
+  Display: '&6&lLegendary &fSpider'
+  Health: 50
+  Damage: 7
+  Drops:
+  - LSkdrops
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.35
     MaxCombatDistance: 25
     PreventOtherDrops: true
