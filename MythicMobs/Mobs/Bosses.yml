@@ -1,0 +1,37 @@
+####################################################
+###    Testing                                     #
+###    Author: diamond_sword51                     #
+###    Date: Now                                   #
+###    More Text Here                              #
+####################################################
+
+ForestGuardian:
+  Type: zombie
+  Display: '&2&lForest Guardian&6'
+  Health: 1
+  Damage: 1
+  Equipment:
+  - ForestGuardianHelm:4
+  - ForestGuardianChest:3
+  - ForestGuardianLeg:2
+  - ForestGuardianBoot:1
+  Disguise:
+    Type: player
+    Player: '&2ForestGuardian'
+    Skin: Dryad
+  Drops:
+  - LZombieDrops
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+  Skills:
+  - skill{s=SummonCows} @Self 0.1
+  - skill{s=dun1} @trigger ~onDeath
+  BossBar:
+    Enabled: true
+    Title: '&2&lGuardian of the Forest&r'
+    Range: 20
+    Color: GREEN
+    Style: SOLID

@@ -1,0 +1,88 @@
+####################################################
+###    Testing                                     #
+###    Author: diamond_sword51                     #
+###    Date: Now                                   #
+###    More Text Here                              #
+####################################################
+
+LZombiehelm:
+  Id: 310
+  Display: '&6&lLegendary Zombie Helmet!'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - THORNS:3
+  - PROTECTION_ENVIRONMENTAL:5
+LZombiechest:
+  Id: 311
+  Display: '&6&lLegendary Zombie Chestplate!'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - THORNS:3
+  - PROTECTION_ENVIRONMENTAL:5
+LZombieleg:
+  Id: 312
+  Display: '&6&lLegendary Zombie Leggings!'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - THORNS:3
+  - PROTECTION_ENVIRONMENTAL:5
+LZombieboot:
+  Id: 313
+  Display: '&6&lLegendary Zombie Boots!'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - THORNS:3
+  - PROTECTION_ENVIRONMENTAL:5
+LZombiesword:
+  Id: 276
+  Display: '&6&lLegendary Zombie Sword!'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - FIRE_ASPECT:2
+  - DAMAGE_ALL:5
+ ###Skeleton
+LSkeletonhelm:
+  Id: 310
+  Display: '&6&lLegendary Skeleton Helmet!'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - THORNS:3
+  - PROTECTION_ENVIRONMENTAL:5
+LSkeletonchest:
+  Id: 311
+  Display: '&6&lLegendary Skeleton Chestplate!'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - THORNS:3
+  - PROTECTION_ENVIRONMENTAL:5
+LSkeletonleg:
+  Id: 312
+  Display: '&6&lLegendary Skeleton Leggings!'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - THORNS:3
+  - PROTECTION_ENVIRONMENTAL:5
+LSkeletonboot:
+  Id: 313
+  Display: '&6&lLegendary Skeleton Boots!'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - THORNS:3
+  - PROTECTION_ENVIRONMENTAL:5
+LZombiebow:
+  Id: 261
+  Display: '&6&lLegendary Skeleton Bow!'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - INFINITY:2
+  - DAMAGE_ALL:5

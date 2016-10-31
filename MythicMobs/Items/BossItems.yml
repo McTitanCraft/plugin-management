@@ -1,0 +1,43 @@
+####################################################
+###    Testing                                     #
+###    Author: diamond_sword51                     #
+###    Date: Now                                   #
+###    More Text Here                              #
+####################################################
+
+ForestGuardianHelm:
+  Id: 298
+  Display: '&aLeaf Crown'
+  Options:
+    Unbreakable: true
+    Color: 0,200,0
+  Enchantments:
+  - THORNS:3
+  - PROTECTION_ENVIRONMENTAL:10
+ForestGuardianChest:
+  Id: 299
+  Display: '&aLeaf Crown'
+  Options:
+    Unbreakable: true
+    Color: 0,200,0
+  Enchantments:
+  - THORNS:3
+  - PROTECTION_ENVIRONMENTAL:10
+ForestGuardianLeg:
+  Id: 300
+  Display: '&aLeaf Crown'
+  Options:
+    Unbreakable: true
+    Color: 0,200,0
+  Enchantments:
+  - THORNS:3
+  - PROTECTION_ENVIRONMENTAL:10
+ForestGuardianBoot:
+  Id: 301
+  Display: '&aLeaf Crown'
+  Options:
+    Unbreakable: true
+    Color: 0,200,0
+  Enchantments:
+  - THORNS:3
+  - PROTECTION_ENVIRONMENTAL:10

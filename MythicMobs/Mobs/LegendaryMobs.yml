@@ -1,0 +1,43 @@
+####################################################
+###    Testing                                     #
+###    Author: diamond_sword51                     #
+###    Date: Now                                   #
+###    More Text Here                              #
+####################################################
+
+LZombie:
+  Type: zombie
+  Display: '&lLegendary Zombie'
+  Health: 20
+  Damage: 20
+  Equipment:
+  - LZombiehelm:4
+  - LZombiechest:3
+  - LZombieleg:2
+  - LZombieboot:1
+  - LZombiesword:0
+  Drops:
+  - LZombieDrops
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true
+LSkeleton:
+  Type: skeleton
+  Display: '&4&lOP &6Skeleton'
+  Health: 20
+  Damage: 20
+  Equipment:
+  - LSkeletonhelm:4
+  - LSkeletonchest:3
+  - LSkeletonleg:2
+  - LSkeletonboot:1
+  - LSkeletonbow:0
+  Drops:
+  - LSkeletondrops
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 25
+    PreventOtherDrops: true

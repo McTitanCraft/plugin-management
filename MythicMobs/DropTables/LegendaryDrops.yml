@@ -1,0 +1,18 @@
+####################################################
+###    Testing                                     #
+###    Author: diamond_sword51                     #
+###    Date: Now                                   #
+###    More Text Here                              #
+####################################################
+
+
+LZombieDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - 264 64 100
+LSkeletonDrops:
+  Conditions:
+  - playerwithin 40
+  Drops:
+  - 264 64 100

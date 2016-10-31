@@ -1,0 +1,25 @@
+####################################################
+###    Testing                                     #
+###    Author: diamond_sword51                     #
+###    Date: Now                                   #
+###    More Text Here                              #
+####################################################
+
+LZombieSpawns:
+  MobType: LZombie
+  Worlds: world
+  Chance: 0.5
+  Priority: 2
+  Action: replace
+  Conditions:
+  - inblock air
+  - height 0 20
+LSkeletonSpawns:
+  MobType: LSkeleton
+  Worlds: world
+  Chance: 0.5
+  Priority: 2
+  Action: replace
+  Conditions:
+  - inblock air
+  - height 0 20

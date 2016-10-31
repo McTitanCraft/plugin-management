@@ -1,0 +1,16 @@
+####################################################
+###    Testing                                     #
+###    Author: diamond_sword51                     #
+###    Date: Now                                   #
+###    More Text Here                              #
+####################################################
+
+FGMinion1:
+  Type: zombie
+  Health: 5
+  Damage: 7
+  Disguise:
+    Type: cow
+  Options:
+    MovementSpeed: 0.5  
+    PreventOtherDrops: true

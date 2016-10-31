@@ -1,0 +1,22 @@
+########################################################################
+###                                                                    #
+###   Ymir, created by jaylawl                                         #
+###   Version: 1.5 - 15.02.2016                                        #
+###   Designed on MythicMobs 2.2.1 #1354, Spigot 1.8.8                 #
+###   Contact: jaylawlMC@gmail.com                                     #
+###                                                                    #
+###   This creation is available for free. If you like it,             #
+###   please consider making a donation to support my work.            #
+###   PayPal: jaylawlMC@gmail.com                                      #
+###                                                                    #
+########################################################################
+ymir_dwarf_spawns:
+  MobType: ymir_dwarf
+  Worlds: world
+  Chance: 0.001
+  Priority: 2
+  Action: add
+  Conditions:
+  - inblock air
+  - outside false
+  - height 0-20

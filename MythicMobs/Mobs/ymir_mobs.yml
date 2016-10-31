@@ -1,0 +1,347 @@
+########################################################################
+###                                                                    #
+###   Ymir, created by jaylawl                                         #
+###   Version: 1.5 - 15.02.2016                                        #
+###   Designed on MythicMobs 2.2.1 #1354, Spigot 1.8.8                 #
+###   Contact: jaylawlMC@gmail.com                                     #
+###                                                                    #
+###   This creation is available for free. If you like it,             #
+###   please consider making a donation to support my work.            #
+###   PayPal: jaylawlMC@gmail.com                                      #
+###                                                                    #
+########################################################################
+###~ YMIR
+ymir:
+  Type: giant
+  Display: '&bYmir&r'
+  Health: 1000
+  Damage: 20
+  Faction: ymir
+  Options:
+    MovementSpeed: 0.2
+    KnockbackResistance: 100
+    FollowRange: 35
+    MaximumCombatDistance: 45
+    NoDamageTicks: 10
+    Despawn: false
+  Modules:
+    ThreatTable: true
+    ImmunityTable: true
+  Equipment:
+  - ymir_helmet:4
+  - ymir_chestplate:3
+  - ymir_leggings:2
+  - ymir_boots:1
+  - ymir_weapon:0
+  DamageModifiers:
+  - ENTITY_ATTACK 1.1
+  - ENTITY_EXPLOSION 0
+  - PROJECTILE 0.1
+  - FALL 0
+  - FIRE_TICK 0
+  - FIRE 0
+  - LAVA 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 lookatplayers
+  - 4 float
+  AITargetSelectors:
+  - 0 clear
+  - 1 attacker
+  Skills:
+  - skill{s=ymir_on_spawn_core;sync=true} @self ~onSpawn
+  - skill{s=ymir_on_attack_core} @self ~onAttack
+  - skill{s=ymir_on_damaged_core} @self ~onDamaged
+  - skill{s=ymir_on_signal_core} @self ~onSignal
+  - skill{s=ymir_on_death_core;sync=true} @self ~onDeath
+  - skill{s=ymir_master_timer} @self ~onTimer:20
+ymir_dummy:
+  Type: giant
+  Display: 'ymir_dummy'
+  Health: 2000
+  Damage: 1
+  Options:
+    MovementSpeed: 0
+    KnockbackResistance: 1
+    Silent: true
+    Despawn: false
+  Equipment:
+  - ymir_helmet:4
+  - ymir_chestplate:3
+  - ymir_leggings:2
+  - ymir_weapon:0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 lookatplayers
+  Skills:
+  - skill{s=ymir_fx_dummy;sync=true} @PIR{r=50} ~onSpawn
+ymir_wisp_first:
+  Type: blaze
+  Display: 'ymir_wisp_first'
+  Health: 10
+  Damage: 1
+  Options:
+    MovementSpeed: 0.5
+    FollowRange: 100
+    Silent: true
+    Despawn: false
+    PreventOtherDrops: true
+  Disguise:
+    Type: cow
+    ShowName: false
+  DamageModifiers:
+  - PROJECTILE 100
+  - ENTITY_ATTACK 0
+  - DROWNING 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - SUFFOCATION 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  AITargetSelectors:
+  - 0 clear
+  - 1 specificfactionmonsters ymir
+  Skills:
+  - potion{t=INVISIBILITY;d=630720000;l=0} @self ~onSpawn
+  - signal{s=first_wave} @MIR{r=100;t=ymir} ~onDeath
+ymir_wisp_second:
+  Type: blaze
+  Display: 'ymir_wisp_second'
+  Health: 10
+  Damage: 1
+  Options:
+    MovementSpeed: 0.5
+    FollowRange: 100
+    Silent: true
+    Despawn: false
+    PreventOtherDrops: true
+  Disguise:
+    Type: cow
+    ShowName: false
+  DamageModifiers:
+  - PROJECTILE 100
+  - ENTITY_ATTACK 0
+  - DROWNING 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - SUFFOCATION 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  AITargetSelectors:
+  - 0 clear
+  - 1 specificfactionmonsters ymir
+  Skills:
+  - potion{t=INVISIBILITY;d=630720000;l=0} @self ~onSpawn
+  - signal{s=second_wave} @MIR{r=100;t=ymir} ~onDeath
+ymir_wisp_third:
+  Type: blaze
+  Display: 'ymir_wisp_third'
+  Health: 10
+  Damage: 1
+  Options:
+    MovementSpeed: 0.5
+    FollowRange: 100
+    Silent: true
+    Despawn: false
+    PreventOtherDrops: true
+  Disguise:
+    Type: cow
+    ShowName: false
+  DamageModifiers:
+  - PROJECTILE 100
+  - ENTITY_ATTACK 0
+  - DROWNING 0
+  - LIGHTNING 0
+  - MAGIC 0
+  - SUFFOCATION 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  AITargetSelectors:
+  - 0 clear
+  - 1 specificfactionmonsters ymir
+  Skills:
+  - potion{t=INVISIBILITY;d=630720000;l=0} @self ~onSpawn
+  - signal{s=third_wave} @MIR{r=100;t=ymir} ~onDeath
+ymir_icebomb:
+  Type: creeper
+  Display: '&bYmir&r'
+  Health: 1
+  Damage: 20
+  DamageModifiers:
+  - ENTITY_EXPLOSION 0
+  - ENTITY_ATTACK 0
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  Options:
+    FuseTicks: 20
+    ExplosionRadius: 0
+    Silent: true
+    PreventOtherDrops: true
+  Disguise:
+    Type: block
+    Block: packed_ice
+  Skills:
+  - suicide{delay=80} @self ~onSpawn 0.5
+  - suicide{delay=90} @self ~onSpawn 0.625
+  - suicide{delay=100} @self ~onSpawn 0.75
+  - suicide{delay=110} @self ~onSpawn 0.875
+  - suicide{delay=130} @self ~onSpawn
+  - remove{delay=200} @self ~onSpawn
+  - effect:explosion @self ~onDeath
+  - damage{a=10} @PIR{r=10} ~onDeath
+  - remove{delay=1} @self ~onDeath
+ymir_lightning_rod:
+  Type: armor_stand
+  Display: '&bYmir&r'
+  KillMessages:
+  - '<target.name> was killed by &bYmir&r<&sq>s lightning'
+  Options:
+    Invisible: true
+    Despawn: true
+    HasGravity: false
+  Skills:
+  - effect:lightning{delay=30} @self ~onSpawn
+  - damage{a=10;delay=30} @PIR{r=3} ~onSpawn
+  - remove{delay=32} @self ~onSpawn
+###~ DWARFS
+ymir_dwarf:
+  Type: zombie
+  Display: '&7Dwarf&r'
+  Health: 100
+  Faction: dwarf
+  Options:
+    Silent: true
+    MovementSpeed: 0.28
+    KnockbackResistance: 0.66
+    ReinforcementsChance: 0
+    PreventItemPickup: true
+  Disguise:
+    Type: player
+    Player: '&7Dwarf&r'
+    Skin: Mattyyy
+  Modules:
+    ThreatTable: true
+  Equipment:
+  - mc_stone_button:4
+  - mc_iron_pickaxe:0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  - 3 randomlookaround
+  - 4 lookatplayers
+  - 5 float
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - skill{s=ymir_dwarf_on_spawn_core} @self ~onSpawn
+  - skill{s=ymir_dwarf_on_attack_core} @self ~onAttack
+  - skill{s=ymir_dwarf_on_damaged_core} @self ~onDamaged
+  - skill{s=ymir_dwarf_master_timer;sync=true} @self ~onTimer:20
+ymir_dwarf_stone_block_minion:
+  Type: silverfish
+  Display: '&7Stone Block&r'
+  Health: 10
+  Damage: 6
+  Faction: dwarf
+  Options:
+    KnockbackResistance: 0.9
+    Silent: true
+    Despawn: true
+  Disguise:
+    Type: block
+    Block: stone
+    ShowName: false
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Skills:
+  - jump{v=0.4} @self ~onSpawn
+  - damage{a=0;delay=1} @self ~onSpawn
+  - effect:sound{s=step.stone;v=1;p=0} @self ~onCombat
+  - effect:particles{p=blockcrack_1;a=25;hS=0.5;vS=0.5} @self ~onDamaged
+ymir_dwarven_warrior:
+  Type: zombie
+  Display: '&7Dwarf&r'
+  Health: 60
+  Faction: dwarf
+  Options:
+    FollowRange: 100
+    MovementSpeed: 0.25
+    PreventOtherDrops: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 float
+  AITargetSelectors:
+  - 0 clear
+  - 1 attacker
+  - 2 players
+  Skills:
+  - skill{s=ymir_dwarven_warrior_on_spawn_core;sync=true} @self ~onSpawn
+  - skill{s=ymir_dwarven_warrior_on_damaged_core} @self ~onDamaged
+  - skill{s=ymir_dwarven_warrior_on_death_core} @self ~onDeath
+  - skill{s=ymir_dwarven_warrior_master_timer} @self ~onTimer:20
+ymir_dwarven_archer:
+  Type: skeleton
+  Display: '&7Dwarf&r'
+  Health: 45
+  Faction: dwarf
+  Options:
+    MovementSpeed: 0.22
+    FollowRange: 100
+    PreventOtherDrops: true
+  Modules:
+    ThreatTable: true
+  AITargetSelectors:
+  - 0 clear
+  - 1 attacker
+  - 2 players
+  Skills:
+  - skill{s=ymir_dwarven_archer_on_spawn_core;sync=true} @self ~onSpawn
+  - skill{s=ymir_dwarven_archer_on_damaged_core} @self ~onDamaged
+  - skill{s=ymir_dwarven_archer_on_death_core} @self ~onDeath
+  - skill{s=ymir_dwarven_archer_master_timer} @self ~onTimer:20
+ymir_dwarven_blacksmith:
+  Type: zombie
+  Display: '&7Dwarf&r'
+  Health: 100
+  Damage: 1
+  Faction: dwarf
+  Options:
+    MovementSpeed: 0.275
+    FollowRange: 100
+    PreventOtherDrops: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 float
+  AITargetSelectors:
+  - 0 clear
+  - 1 attacker
+  - 2 players
+  Skills:
+  - skill{s=ymir_dwarven_blacksmith_on_spawn_core;sync=true} @self ~onSpawn
+  - skill{s=ymir_dwarven_blacksmith_on_attack_core} @self ~onAttack
+  - skill{s=ymir_dwarven_blacksmith_on_damaged_core} @self ~onDamaged
+  - skill{s=ymir_dwarven_blacksmith_on_death_core} @self ~onDeath
+  - skill{s=ymir_dwarven_blacksmith_master_timer} @self ~onTimer:20
+###

@@ -1,0 +1,23 @@
+####################################################
+###    Testing                                     #
+###    Author: diamond_sword51                     #
+###    Date: Now                                   #
+###    More Text Here                              #
+####################################################
+
+SummonCows:
+  Cooldown: 15
+  Skills:
+  - message{m="<mob.name><&co> May the Cows rip out your liver!"} @PlayersInRadius{r=40}
+  - delay 20
+  - summon{mob=FGMinion1;amount=2;noise=5} @Self
+  - delay 20
+  - summon{mob=FGMinion1;amount=2;noise=5} @Self
+  - delay 20
+  - summon{mob=FGMinion1;amount=2;noise=5} @Self
+#### Dungon Advancement ###
+dun1:
+  Skills:
+  - command{c="pex user <target.name> add essentials.warps.dun1"} @trigger ~onDeath
+  - message{m="&c&l&oWell Done &b<target.name>, &c&l&oyou may now advance to the next dungon!"} @trigger ~onDeath
+dun2:

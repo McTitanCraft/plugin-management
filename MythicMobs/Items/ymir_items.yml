@@ -1,0 +1,59 @@
+########################################################################
+###                                                                    #
+###   Ymir, created by jaylawl                                         #
+###   Version: 1.5 - 15.02.2016                                        #
+###   Designed on MythicMobs 2.2.1 #1354, Spigot 1.8.8                 #
+###   Contact: jaylawlMC@gmail.com                                     #
+###                                                                    #
+###   This creation is available for free. If you like it,             #
+###   please consider making a donation to support my work.            #
+###   PayPal: jaylawlMC@gmail.com                                      #
+###                                                                    #
+########################################################################
+ymir_weapon:
+  Id: 278
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - DURABILITY:1
+ymir_helmet:
+  Id: 310
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - DURABILITY:1
+ymir_chestplate:
+  Id: 311
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - THORNS:1
+  Lore:
+  - '&2Chestplate of kings!'
+  - '&2Forged with unbreakable diamonds!'
+ymir_leggings:
+  Id: 312
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - DURABILITY:1
+ymir_boots:
+  Id: 313
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - DURABILITY:1
+ymir_chestplate_leather:
+  Id: 299
+  Options:
+    Unbreakable: true
+    Color: 84,213,235
+  Enchantments:
+  - DURABILITY:1
+ymir_leggings_leather:
+  Id: 300
+  Options:
+    Unbreakable: true
+    Color: 84,213,235
+  Enchantments:
+  - DURABILITY:1
