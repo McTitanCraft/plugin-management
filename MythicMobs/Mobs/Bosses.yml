@@ -5,11 +5,12 @@
 ###    More Text Here                              #
 ####################################################
 
+### FOREST GUARDIAN ###
 ForestGuardian:
   Type: zombie
   Display: '&2&lForest Guardian&6'
-  Health: 1
-  Damage: 1
+  Health: 250
+  Damage: 7
   Equipment:
   - ForestGuardianHelm:4
   - ForestGuardianChest:3
@@ -20,7 +21,7 @@ ForestGuardian:
     Player: '&2ForestGuardian'
     Skin: Dryad
   Drops:
-  - LZombieDrops
+  - ForestGuardianDrops
   Options:
     AlwaysShowName: true
     MovementSpeed: 0.3
@@ -34,4 +35,29 @@ ForestGuardian:
     Title: '&2&lGuardian of the Forest&r'
     Range: 20
     Color: GREEN
+    Style: SOLID
+### ICE LORD ###
+IceLord:
+  Type: blaze
+  Display: '&f&lIce Lord'
+  Health: 500
+  Damage: 9
+  Equipment:
+  - 
+  Disguise:
+    Type: player
+    Player: '&f&lIce Lord'
+    Skin: 'icelord'
+  Drops:
+  - IceLordDrops
+  Options:
+    AlwaysShowName: true
+    MovementSpeed: 0.225
+    MaxCombatDistance: 50
+    PreventOtherDrops: true
+  BossBar:
+    Enabled: true
+    Title: '&f&lIce Lord&r'
+    Range: 40
+    Color: WHITE
     Style: SOLID
