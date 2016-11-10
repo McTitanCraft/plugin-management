@@ -1,7 +1,7 @@
 #Example for enchants and lroe and nameing
 kits:
-  Starter:
-    delay: 10
+  StoneTools:
+    delay: 600
     items:
       - 272 1
       - 273 1
